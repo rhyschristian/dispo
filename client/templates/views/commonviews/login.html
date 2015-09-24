@@ -1,0 +1,43 @@
+<template name="login">
+
+    <!-- <div class="back-link">
+        <a href="{{pathFor route='dashboard'}}" class="btn btn-primary">Back to Dashboard</a>
+    </div> -->
+
+    <div class="login-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center m-b-md">
+                    <h3>Login to Dispo</h3>
+                    <!-- <small>This is the best app ever!</small> -->
+                </div>
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <form class="login" id="loginForm">
+                            <div class="form-group">
+                                <label class="control-label" for="email">Email</label>
+                                <input type="email" placeholder="example@gmail.com" title="Please enter your email" required="" value="" id="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="password">Password</label>
+                                <input type="password" title="Please enter your password" placeholder="******" required="" value="" id="password" class="form-control">
+                            </div>
+                            <div class="checkbox col-lg-12">
+                                <input type="checkbox" class="i-checks" checked>
+                                Remember login
+                            </div>
+                            <button action="submit" class="btn btn-success btn-block">Login</button>
+                            <a class="btn btn-default btn-block" href="{{pathFor route='register'}}">Register</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <strong>Dispo</strong> - Find time. <br/>
+                <small>2015 Copyright Dispo App</small>
+            </div>
+        </div>
+    </div>
+</template>

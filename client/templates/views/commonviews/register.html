@@ -1,0 +1,47 @@
+<template name="register">
+
+    <!-- <div class="back-link">
+        <a href="{{pathFor route='dashboard'}}" class="btn btn-primary">Back to Dashboard</a>
+    </div> -->
+
+    <div class="register-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center m-b-md">
+                    <h3>Register for Dispo</h3>
+                    <small></small>
+                </div>
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <form class="register" id="registerForm">
+                            <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label>Email</label>
+                                    <input type="email" value="" id="email" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Password</label>
+                                    <input type="password" value="" id="password" class="form-control">
+                                </div>
+                                <div class="checkbox col-lg-12">
+                                    <input type="checkbox" class="i-checks" checked>
+                                    Sigh up for our newsletter
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-default" ><a href="{{pathFor route='login'}}">I have an account</a></button>
+                                <button action="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <strong>Dispo</strong> - Find time. <br/>
+                <small>2015 Copyright SEP Group 4</small>
+            </div>
+        </div>
+    </div>
+</template>
