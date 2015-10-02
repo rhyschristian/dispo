@@ -1,2 +1,2 @@
 Friends = new Mongo.Collection('friends');
-Times = new Mongo.Collection('times');
+Hangs = new Mongo.Collection('hangs');
