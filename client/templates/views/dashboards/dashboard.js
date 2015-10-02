@@ -1,3 +1,11 @@
+Template.dashboard.helpers({
+  rendered: function(){
+    'hang': function(){
+        return Hangs.find({}, {sort: {createdAt: -1}});
+    }
+  }
+});
+
 Template.dashboard.onRendered(function(){
 
     if (!Meteor.userId()) {
