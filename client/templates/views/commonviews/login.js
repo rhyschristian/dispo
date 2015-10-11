@@ -3,6 +3,12 @@ Template.login.onCreated(function(){
 });
 
 Template.login.onRendered(function(){
+    // Initialize iCheck plugin
+    $('.i-checks').iCheck({
+        checkboxClass: 'icheckbox_square-green',
+        radioClass: 'iradio_square-green'
+    });
+
     var validator = $('.login').validate({
         submitHandler: function(event){
             var email = $('[name=email]').val();

@@ -1,4 +1,4 @@
-<template name="login">
+<template name="login" xmlns="http://www.w3.org/1999/html">
 
     <!-- <div class="back-link">
         <a href="{{pathFor route='dashboard'}}" class="btn btn-primary">Back to Dashboard</a>
@@ -22,12 +22,16 @@
                                 <label class="control-label" for="password">Password</label>
                                 <input type="password" name="password" title="Please enter your password" placeholder="******" value="" id="password" class="form-control" required>
                             </div>
-                            <div class="checkbox col-lg-12">
+                            <div class="checkbox col-md-12 text-left">
                                 <input type="checkbox" class="i-checks" checked>
-                                Remember login
+                                Keep me logged in
                             </div>
                             <button action="submit" class="btn btn-success btn-block">Login</button>
                             <a class="btn btn-default btn-block" href="{{pathFor route='register'}}">Register</a>
+                            <br/>
+                            <div class="col-md-12 text-center">
+                                <a href="#">I forgot my password!</a>
+                            </div>
                         </form>
                     </div>
                 </div>
