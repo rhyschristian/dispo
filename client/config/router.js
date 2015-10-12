@@ -4,7 +4,15 @@ Router.configure({
 });
 
 //
-// Dashboard route
+// Admin Dashboard route
+//
+
+Router.route('/adminDashboard', function () {
+    this.render('adminDashboard');
+});
+
+//
+// User Dashboard route
 //
 
 Router.route('/', function () {
@@ -171,6 +179,10 @@ Router.route('/errorOne', function () {
 });
 Router.route('/errorTwo', function () {
     this.render('errorTwo');
+    this.layout('blankLayout');
+});
+Router.route('/errorThree', function () {
+    this.render('errorThree');
     this.layout('blankLayout');
 });
 Router.route('/lock', function () {

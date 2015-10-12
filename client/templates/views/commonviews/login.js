@@ -20,10 +20,11 @@ Template.login.onRendered(function(){
                         });
                     }
                 } else {
+                    var loggedInUser = Meteor.user();
                     var currentRoute = Router.current().route.getName();
                     if(currentRoute == "login"){
-                        Router.go("dashboard");
-                    }
+                       Router.go("dashboard");
+                       }
                 }
             });
         }

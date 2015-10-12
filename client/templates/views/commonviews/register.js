@@ -23,6 +23,7 @@ Template.register.onRendered(function(){
                         });
                     }
                 } else {
+                    Roles.addUsersToRoles(Meteor.user(), 'standard');
                     Router.go("dashboard");
                 }
             });

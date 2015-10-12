@@ -7,7 +7,16 @@
     {{> header }}
 
     <!-- Navigation -->
-    {{> navigation }}
+    <!--{{> navigation }}-->
+
+
+
+    {{#if isInRole 'admin'}}
+        {{> adminNav }}
+    {{/if}}
+    {{#if isInRole 'standard'}}
+        {{> navigation}}
+    {{/if}}
 
     <!-- Main Wrapper -->
     <div id="wrapper">
